@@ -2,3 +2,11 @@
     margin-bottom: 25px;
     border-bottom: 2px solid darkgray;
 }
+
+.bar {
+    display: inline-block;
+    width: 20px;
+    height: 75px;   /* We'll override this later */
+    background-color: teal;
+    margin-right: 2px;
+}
