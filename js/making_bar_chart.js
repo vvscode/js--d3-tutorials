@@ -15,8 +15,8 @@ svg.selectAll("rect")
   .data(dataset)
   .enter()
   .append("rect")
-  .attr("x", (d, i) => i * (w / dataset.length))  //Bar width of 20 plus 1 for padding
-  .attr("width", w / dataset.length - barPadding)
+  .attr("x", (d, i) => i * (chartWidth / dataset.length))  //Bar width of 20 plus 1 for padding
+  .attr("width", chartWidth / dataset.length - barPadding)
   .attr("y", (d) => chartHeight - d * 4)
   .attr("height", (d) => d * 4)
   .attr("fill", (d) => `rgb(0, 0, ${(d * 10)})`);
