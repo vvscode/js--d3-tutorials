@@ -21,3 +21,15 @@ svg.selectAll("rect")
   .attr("height", (d) => d * 4)
   .attr("fill", (d) => `rgb(0, 0, ${(d * 10)})`);
 
+svg.selectAll("text")
+  .data(dataset)
+  .enter()
+  .append("text")
+  .text((d) => d)
+  .attr("x", (d, i) => i * (chartWidth / dataset.length) + (chartWidth / dataset.length - barPadding) / 2)
+  .attr("y", (d) => chartHeight - (d * 4) + 14)
+  .attr("font-family", "sans-serif")
+  .attr("font-size", "11px")
+  .attr("fill", (d) => `rgb(${(d * 10)}, 255, 255)`)
+  .attr("text-anchor", "middle")
+;
