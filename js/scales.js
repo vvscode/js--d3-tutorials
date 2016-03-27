@@ -21,7 +21,7 @@ var rScale = d3.scale.linear()
   .range([2, 5])
 
 //Create SVG element
-var svg = d3.select("body")
+var svg = d3.select(".scales")
   .append("svg")
   .attr("width", chartWidth)
   .attr("height", chartHeight);
